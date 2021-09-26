@@ -87,7 +87,10 @@ while input("Play a new round of Blackjack? (y/n) > ").lower() == "y":
         print(logo)
         print("PLAYER WINS\n")
         show_result()  
-
+    elif p_score == c_score:
+        clear()
+        print(logo)
+        print("IT'S A DRAW\n")
     else:
         clear()
         print(logo)
