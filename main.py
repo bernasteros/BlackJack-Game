@@ -49,7 +49,6 @@ while input("Play a new round of Blackjack? (y/n) > ").lower() == "y":
     c_deck.append(deal(deck))
     c_score = check_score(c_deck)
 
-
     while p_score < 21 and input("Take another card? (y/n) > ").lower() == "y":
         p_deck.append(deal(deck))
         p_score = check_score(p_deck)
@@ -59,7 +58,7 @@ while input("Play a new round of Blackjack? (y/n) > ").lower() == "y":
         clear()
         print(logo)
         show_result()
-
+    
     while c_score < 17:
         c_deck.append(deal(deck))
         c_score = check_score(c_deck)
@@ -91,6 +90,7 @@ while input("Play a new round of Blackjack? (y/n) > ").lower() == "y":
         clear()
         print(logo)
         print("IT'S A DRAW\n")
+        show_result()
     else:
         clear()
         print(logo)
